@@ -109,6 +109,21 @@ export class CommandExecutor {
     }
   }
 
+  private resetTimeout(sessionKey: string): void {
+    const session = this.sessions.get(sessionKey);
+    if (!session) return;
+
+    if (session.timeout) {
+      clearTimeout(session.timeout);
+    }
+
+    session.timeout = setTimeout(async () => {
+      log.info(`Session ${sessionKey} timeout, disconnecting`);
+      await this.disconnectSession(sessionKey);
+    }, this.sessionTimeout);
+
+    this.sessions.set(sessionKey, session);
+  }
 
   async executeCommand(
     command: string,
