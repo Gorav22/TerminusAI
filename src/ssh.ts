@@ -7,6 +7,7 @@ export class SSHManager {
   private client: Client | null = null;
   private connection: Promise<void> | null = null;
   private timeout: NodeJS.Timeout | null = null;
+  private sessionTimeout: number = 20 * 60 * 1000; // 20 minutes
 
   constructor() {
     this.client = new Client();
