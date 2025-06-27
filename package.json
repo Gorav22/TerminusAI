@@ -1,7 +1,7 @@
 {
-  "name": "terminal-mcp-server",
+  "name": "terminusai",
   "version": "0.1.0",
-  "description": "Terminal Mcp that can run any command on your device.",
+  "description": "TerminusAI- a final stop for all terminal tasks, AI-driven",
   "private": true,
   "type": "module",
   "bin": {
