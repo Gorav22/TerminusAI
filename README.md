@@ -1,4 +1,4 @@
-# Terminal MCP Server
+# TerminusAI – a final stop for all terminal tasks, AI-driven
 
 
 Terminal MCP Server is a Model Context Protocol (MCP) server that allows executing commands on local or remote hosts. It provides a simple yet powerful interface for AI models and other applications to execute system commands, either on the local machine or on remote hosts via SSH.
@@ -15,17 +15,17 @@ Terminal MCP Server is a Model Context Protocol (MCP) server that allows executi
 
 ### Installing via Smithery
 
-To install terminal-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Gorav22/terminal-mcp-server):
+To install terminal-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Gorav22/TerminusAI):
 
 ```bash
-npx -y @smithery/cli install @Gorav22/terminal-mcp-server --client claude
+npx -y @smithery/cli install @Gorav22/TerminusAI --client claude
 ```
 
 ### Manual Installation
 ```bash
 # Clone the repository
-git clone https://github.com/Gorav/terminal-mcp-server.git
-cd terminal-mcp-server
+git clone https://github.com/Gorav/TerminusAI.git
+cd TerminusAI
 
 # Install dependencies
 npm install

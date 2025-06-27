@@ -20,10 +20,6 @@ export class CommandExecutor {
 
   constructor() {}
 
-  private getSessionKey(host: string | undefined, sessionName: string): string {
-    return `${host || 'local'}-${sessionName}`;
-  }
-
   async connect(host: string, username: string, sessionName: string = 'default'): Promise<void> {
     const sessionKey = this.getSessionKey(host, sessionName);
     const session = this.sessions.get(sessionKey);
