@@ -15,7 +15,7 @@ Terminal MCP Server is a Model Context Protocol (MCP) server that allows executi
 
 ### Installing via Smithery
 
-To install terminal-mcp-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Gorav22/TerminusAI):
+To install TerminusAI-server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Gorav22/TerminusAI):
 
 ```bash
 npx -y @smithery/cli install @Gorav22/TerminusAI --client claude
@@ -131,9 +131,9 @@ The execute_command tool is the core functionality provided by Terminal MCP Serv
 ```json
 {
   "mcpServers": {
-    "terminal-mcp": {
+    "TerminusAI": {
       "command": "node",
-      "args": ["/path/to/terminal-mcp-server/build/index.js"],
+      "args": ["/path/to/TerminusAI-server/build/index.js"],
       "env": {}
     }
   }
@@ -145,7 +145,7 @@ The execute_command tool is the core functionality provided by Terminal MCP Serv
 ```json
 {
   "mcpServers": {
-    "terminal-mcp-sse": {
+    "TerminusAI-sse": {
       "url": "http://localhost:8080/sse",
       "headers": {}
     }
@@ -165,9 +165,9 @@ Replace `localhost:8080/sse` with your actual server address, port, and endpoint
 ```json
 {
   "mcpServers": {
-    "terminal-mcp": {
+    "TerminusAI": {
       "command": "node",
-      "args": ["/path/to/terminal-mcp-server/build/index.js"],
+      "args": ["/path/to/TerminusAI-server/build/index.js"],
       "env": {}
     }
   }
@@ -179,7 +179,7 @@ Replace `localhost:8080/sse` with your actual server address, port, and endpoint
 ```json
 {
   "mcpServers": {
-    "terminal-mcp-sse": {
+    "TerminusAI-sse": {
       "url": "http://localhost:8080/sse",
       "headers": {}
     }
@@ -197,9 +197,9 @@ Replace `localhost:8080/sse` with your actual server address, port, and endpoint
 ```json
 {
   "mcpServers": {
-    "terminal-mcp": {
+    "TerminusAI": {
       "command": "node",
-      "args": ["/path/to/terminal-mcp-server/build/index.js"],
+      "args": ["/path/to/TerminusAI-server/build/index.js"],
       "env": {} //add env variables if your terminal code needs that like in linux if your command wants to use root or admin piower for which its password is needed then mention that in env and also tell to llm about that or it automatic scans and come to know that. 
     }
   }
@@ -211,7 +211,7 @@ Replace `localhost:8080/sse` with your actual server address, port, and endpoint
 ```json
 {
   "mcpServers": {
-    "terminal-mcp-sse": {
+    "TerminusAI-sse": {
       "url": "http://localhost:8080/sse",
       "headers": {}
     }
