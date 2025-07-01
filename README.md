@@ -119,7 +119,7 @@ The execute_command tool is the core functionality provided by Terminal MCP Serv
   "command": "ls -la",
   "session": "my-remote-session",
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production"//add any other env variables if your terminal code needs that like in linux if your command wants to use root or admin piower for which its password is needed then mention that in env and also tell to llm about that or it automatic scans and come to know that. 
   }
 }
 ```
@@ -134,7 +134,7 @@ The execute_command tool is the core functionality provided by Terminal MCP Serv
     "TerminusAI": {
       "command": "node",
       "args": ["/path/to/TerminusAI-server/build/index.js"],
-      "env": {}
+      "env": {}//add env variables if your terminal code needs that like in linux if your command wants to use root or admin piower for which its password is needed then mention that in env and also tell to llm about that or it automatic scans and come to know that. 
     }
   }
 }
@@ -147,7 +147,7 @@ The execute_command tool is the core functionality provided by Terminal MCP Serv
   "mcpServers": {
     "TerminusAI-sse": {
       "url": "http://localhost:8080/sse",
-      "headers": {}
+      "headers": {}//add env variables if your terminal code needs that like in linux if your command wants to use root or admin piower for which its password is needed then mention that in env and also tell to llm about that or it automatic scans and come to know that. 
     }
   }
 }
@@ -168,7 +168,7 @@ Replace `localhost:8080/sse` with your actual server address, port, and endpoint
     "TerminusAI": {
       "command": "node",
       "args": ["/path/to/TerminusAI-server/build/index.js"],
-      "env": {}
+      "env": {}//add env variables if your terminal code needs that like in linux if your command wants to use root or admin piower for which its password is needed then mention that in env and also tell to llm about that or it automatic scans and come to know that. 
     }
   }
 }
@@ -181,7 +181,7 @@ Replace `localhost:8080/sse` with your actual server address, port, and endpoint
   "mcpServers": {
     "TerminusAI-sse": {
       "url": "http://localhost:8080/sse",
-      "headers": {}
+      "headers": {}//add env variables if your terminal code needs that like in linux if your command wants to use root or admin piower for which its password is needed then mention that in env and also tell to llm about that or it automatic scans and come to know that. 
     }
   }
 }
